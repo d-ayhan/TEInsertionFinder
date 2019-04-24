@@ -17,7 +17,7 @@ Outputs:
 
 The GFF file could be for a single transposon or multiple transposons. In the latter case, the current version cannot determine the type of 
 transposon from which the transposition was detected. 
-It is good practice to filter out supplementary and secondary mappings in the BAM file, since bedtools does not differentiate between the two types of mappings and will count them all.
+It is good practice to filter out supplementary and secondary mappings in the BAM file, since bedtools does not differentiate between the two types of mappings and counts them all.
 
 USAGE:
 TEInsertionFinder.sh INPUT.BAM TEs.GFF
