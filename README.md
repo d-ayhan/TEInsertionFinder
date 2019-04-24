@@ -9,16 +9,15 @@ samtools (tested with 1.3)
 
 Inputs:
 1. paired-end reads mapped to a reference, BAM
-2. TE positions in reference, GFF
+2. TE positions in the reference, GFF
 
 Outputs:
 1. Alignments of the detected pairs in the insertion site, BAM
 2. General  positions of the detected pairs, BED
 
-The GFF file could be for single transposon, or multiple transposons. 
-If it is the second case, current version cannot determine the type of the transposon of which the transposition detected.
-It is a good practice to filterout suplementary and secondary mappings in the BAM file, since the pipeline considers them same as primary mapping.
+The GFF file could be for a single transposon or multiple transposons. In the latter case, the current version cannot determine the type of 
+transposon from which the transposition was detected. 
+It is good practice to filter out supplementary and secondary mappings in the BAM file, since bedtools does not differentiate between the two types of mappings and will count them all.
 
 USAGE:
 TEInsertionFinder.sh INPUT.BAM TEs.GFF
-
