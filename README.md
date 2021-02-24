@@ -1,3 +1,6 @@
+NEW VERSION CAN BE FOUND AT https://github.com/VistaSohrab/TEfinder
+{https://doi.org/10.5281/zenodo.4479946}
+
 # TEInsertionFinder
 
 TEInsertionFinder is a pipeline designed to detect tranposon insertion sites which are not present in the reference.
